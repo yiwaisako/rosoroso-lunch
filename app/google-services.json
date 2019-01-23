@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "491631707929",
+    "firebase_url": "https://rosoroso-lunch.firebaseio.com",
+    "project_id": "rosoroso-lunch",
+    "storage_bucket": "rosoroso-lunch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491631707929:android:519a57e40bff5048",
+        "android_client_info": {
+          "package_name": "jp.co.yiwaisako.rosoroso_lunch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491631707929-q065d0sp9jklq9d4euh02epdged4lsmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkwKsWLE2Q-geNRr_VsrgImQk-5vyFrHI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

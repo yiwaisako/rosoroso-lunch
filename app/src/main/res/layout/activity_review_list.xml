@@ -8,20 +8,38 @@
         tools:context=".MainActivity">
 
     <Button
-            android:id="@+id/review"
+            android:id="@+id/nakameguro"
             android:layout_width="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:text="レビュー投稿"
+            android:text="中目黒"
             android:layout_height="wrap_content"/>
 
     <Button
-            android:id="@+id/restaurant_list"
+            android:id="@+id/shibuya"
             android:layout_width="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/review"
-            android:text="飲食店一覧"
+            app:layout_constraintTop_toBottomOf="@+id/nakameguro"
+            android:text="渋谷"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/shinsen"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/shibuya"
+            android:text="神泉"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/ikejirioohash"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/shinsen"
+            android:text="池尻大橋"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_height="wrap_content"/>

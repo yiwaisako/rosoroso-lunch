@@ -8,22 +8,12 @@
         tools:context=".MainActivity">
 
     <Button
-            android:id="@+id/review"
             android:layout_width="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:text="レビュー投稿"
-            android:layout_height="wrap_content"/>
-
-    <Button
-            android:id="@+id/restaurant_list"
-            android:layout_width="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/review"
-            android:text="飲食店一覧"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            android:text="レストラン一覧"
             android:layout_height="wrap_content"/>
 
 </android.support.constraint.ConstraintLayout>

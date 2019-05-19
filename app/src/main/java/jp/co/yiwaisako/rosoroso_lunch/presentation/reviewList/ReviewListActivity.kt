@@ -61,7 +61,7 @@ class ReviewListActivity : AppCompatActivity(), ReviewListContract.View {
         controller.setData(data)
 
         binding.fab.setOnClickListener {
-            ReviewPostingActivity.createIntent(this).apply {
+            ReviewPostingActivity.createIntent(this, documentId).apply {
                 startActivityForResult(this, REQUEST_CODE_REVIEW_POSTING)
             }
         }

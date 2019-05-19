@@ -5,11 +5,11 @@ import jp.co.yiwaisako.rosoroso_lunch.domain.model.Review
 interface ReviewPostingContract {
 
     interface View : ScreenTransition {
-        // NOP
+        fun showToast(messsage: String)
     }
 
     interface Presenter {
-        fun onClickRegister(review: Review)
+        fun onClickRegister(restaurantDocumentId: String, review: Review)
     }
 
     interface ScreenTransition {

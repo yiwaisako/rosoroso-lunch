@@ -1,6 +1,7 @@
 package jp.co.yiwaisako.rosoroso_lunch.presentation.reviewList
 
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.Query
 import jp.co.yiwaisako.rosoroso_lunch.domain.model.Review
 
 
@@ -12,6 +13,7 @@ class ReviewListPresenter(val view: ReviewListContract.View) : ReviewListContrac
         fireStore.collection("restaurants")
             .document(documentId)
             .collection("reviews")
+            .orderBy("createTime", Query.Direction.DESCENDING)
             .get()
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {

@@ -20,6 +20,11 @@ android {
         // Enabling multidex support.
         multiDexEnabled true
 
+        // firestore
+        buildConfigField "String", "restaurants", "\"restaurants\""
+        buildConfigField "String", "stations", "\"stations\""
+        buildConfigField "String", "users", "\"users\""
+        buildConfigField "String", "reviews", "\"reviews\""
     }
     buildTypes {
         release {

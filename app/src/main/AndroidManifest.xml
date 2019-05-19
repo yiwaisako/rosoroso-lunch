@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="jp.co.yiwaisako.rosoroso_lunch">
 
+    <!-- for targetSdkVersion 28 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
     <application
             android:name=".MainApplication"
             android:allowBackup="false"
@@ -10,7 +13,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".presentation.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -25,10 +28,10 @@
                 <data android:scheme="rosoroso-lunch"/>
             </intent-filter>
         </activity>
-        <activity android:name=".StationListActivity"/>
-        <activity android:name=".RestaurantListActivity"/>
-        <activity android:name=".RestaurantRegisterActivity"/>
-        <activity android:name=".ReviewPostingActivity"/>
-        <activity android:name=".ReviewListActivity"/>
+        <activity android:name=".presentation.StationListActivity"/>
+        <activity android:name=".presentation.RestaurantListActivity"/>
+        <activity android:name=".presentation.RestaurantRegisterActivity"/>
+        <activity android:name=".presentation.ReviewPostingActivity"/>
+        <activity android:name=".presentation.reviewList.ReviewListActivity"/>
     </application>
 </manifest>

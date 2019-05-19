@@ -31,7 +31,7 @@
         <activity android:name=".presentation.StationListActivity"/>
         <activity android:name=".presentation.RestaurantListActivity"/>
         <activity android:name=".presentation.RestaurantRegisterActivity"/>
-        <activity android:name=".presentation.ReviewPostingActivity"/>
+        <activity android:name=".presentation.reviewPosting.ReviewPostingActivity"/>
         <activity android:name=".presentation.reviewList.ReviewListActivity"/>
     </application>
 </manifest>

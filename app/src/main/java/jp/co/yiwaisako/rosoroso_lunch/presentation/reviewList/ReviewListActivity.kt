@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import jp.co.yiwaisako.rosoroso_lunch.R
 import jp.co.yiwaisako.rosoroso_lunch.databinding.ActivityReviewListBinding
 import jp.co.yiwaisako.rosoroso_lunch.domain.model.Review
-import jp.co.yiwaisako.rosoroso_lunch.presentation.ReviewPostingActivity
+import jp.co.yiwaisako.rosoroso_lunch.presentation.reviewPosting.ReviewPostingActivity
 import jp.co.yiwaisako.rosoroso_lunch.util.ext.contentViewBinding
 import jp.co.yiwaisako.rosoroso_lunch.util.ext.toGone
 

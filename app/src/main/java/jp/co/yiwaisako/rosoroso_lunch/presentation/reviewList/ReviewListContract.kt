@@ -8,7 +8,7 @@ interface ReviewListContract {
     }
 
     interface Presenter {
-        fun onCreate()
+        fun onCreate(documentId:String)
     }
 
     interface ScreenTransition {

@@ -1,30 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
         <variable
-                name="restaurantName"
-                type="String"/>
+            name="restaurantName"
+            type="String" />
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener" />
 
     </data>
 
     <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:background="@color/azure"
+        android:minHeight="@dimen/dimen_48dp"
+        android:onClick="@{onClick}">
 
-        <Button
-                android:id="@+id/name"
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                android:text="@{restaurantName}"
-                android:layout_height="@dimen/dimen_48dp"/>
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{restaurantName}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="山和" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平均評価値(工事中)"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/restaurant_name"
+            tools:text="平均評価値(工事中)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:text="食べログのページ(工事中)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurant_name"
+            tools:text="食べログのページ(工事中)" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>

@@ -1,4 +1,4 @@
-package jp.co.yiwaisako.rosoroso_lunch.presentation
+package jp.co.yiwaisako.rosoroso_lunch.presentation.restaurantRegister
 
 import android.content.Context
 import android.content.Intent

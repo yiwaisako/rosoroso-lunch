@@ -2,8 +2,8 @@ package jp.co.yiwaisako.rosoroso_lunch.domain.model
 
 import java.util.*
 
-open class Review {
-    val body: String = ""
+data class Review(
+    val body: String = "",
+    val stars: Int = 0,
     val createTime: Date = Date()
-    val stars: Int = 0
-}
+)

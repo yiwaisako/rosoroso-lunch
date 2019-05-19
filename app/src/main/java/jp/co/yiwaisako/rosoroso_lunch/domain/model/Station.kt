@@ -1,5 +1,6 @@
 package jp.co.yiwaisako.rosoroso_lunch.domain.model
 
-open class Station {
+data class Station(
+    val name: String,
     val createTime: Int = 0
-}
+)

@@ -42,6 +42,12 @@ class ReviewListActivity : AppCompatActivity(), ReviewListContract.View {
             recyclerView.setController(controller)
         }
 
+        binding.fab.setOnClickListener {
+            ReviewPostingActivity.createIntent(this, documentId).apply {
+                startActivityForResult(this, REQUEST_CODE_REVIEW_POSTING)
+            }
+        }
+
         presenter.onCreate(documentId)
     }
 
@@ -59,11 +65,5 @@ class ReviewListActivity : AppCompatActivity(), ReviewListContract.View {
     override fun setup(data: List<Review>) {
         binding.progressbar.toGone()
         controller.setData(data)
-
-        binding.fab.setOnClickListener {
-            ReviewPostingActivity.createIntent(this, documentId).apply {
-                startActivityForResult(this, REQUEST_CODE_REVIEW_POSTING)
-            }
-        }
     }
 }

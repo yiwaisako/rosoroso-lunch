@@ -9,8 +9,8 @@ class RestaurantListPresenter(val view: RestaurantListContract.View) :
     RestaurantListContract.Presenter {
     private val fireStore = FirebaseFirestore.getInstance()
 
-    override fun onCreate(stationDocument: String) {
-        fetchRestaurants(stationDocument)
+    override fun onCreate(stationKey: String) {
+        fetchRestaurants(stationKey)
     }
 
     override fun onClickRestaurant(documentId: String) {
@@ -18,9 +18,9 @@ class RestaurantListPresenter(val view: RestaurantListContract.View) :
         view.moveToReviewList(documentId)
     }
 
-    private fun fetchRestaurants(stationDocument: String) {
+    private fun fetchRestaurants(stationKey: String) {
         fireStore.collection("restaurants")
-            .whereEqualTo("station", fireStore.collection("stations").document(stationDocument))
+            .whereEqualTo("station", fireStore.document(stationKey))
             .get()
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
@@ -29,7 +29,6 @@ class RestaurantListPresenter(val view: RestaurantListContract.View) :
                     val data: ArrayList<Restaurant> = arrayListOf()
                     result.documents.forEach {
                         it.toObject(Restaurant::class.java)?.let { restaurant ->
-                            // 一応Documentのidを保存しておく
                             restaurant.id = it.id
                             data.add(restaurant)
                         }

@@ -20,16 +20,16 @@ class HomeActivity : AppCompatActivity() {
 
     private fun setup() {
         binding.nakaMeguro.setOnClickListener {
-            moveToRestaurantList("naka-meguro")
+            moveToRestaurantList("/stations/naka-meguro")
         }
         binding.shibuya.setOnClickListener {
-            moveToRestaurantList("shibuya")
+            moveToRestaurantList("/stations/shibuya")
         }
         binding.shinsen.setOnClickListener {
-            moveToRestaurantList("shinsen")
+            moveToRestaurantList("/stations/shinsen")
         }
         binding.ikejirioohash.setOnClickListener {
-            moveToRestaurantList("ikejiri-ohashi")
+            moveToRestaurantList("/stations/ikejiri-ohashi")
         }
     }
 

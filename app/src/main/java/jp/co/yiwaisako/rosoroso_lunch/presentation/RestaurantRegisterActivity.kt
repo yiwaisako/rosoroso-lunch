@@ -1,10 +1,10 @@
-package jp.co.yiwaisako.rosoroso_lunch
+package jp.co.yiwaisako.rosoroso_lunch.presentation
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_station_list.*
+import jp.co.yiwaisako.rosoroso_lunch.R
 
 
 class RestaurantRegisterActivity : AppCompatActivity() {

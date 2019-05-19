@@ -1,0 +1,55 @@
+<resources>
+    <!-- base dimens -->
+    <dimen name="dimen_2dp">2dp</dimen>
+    <dimen name="dimen_4dp">4dp</dimen>
+    <dimen name="dimen_6dp">6dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_12dp">12dp</dimen>
+    <dimen name="dimen_14dp">14dp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_18dp">18dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_28dp">28dp</dimen>
+    <dimen name="dimen_32dp">32dp</dimen>
+    <dimen name="dimen_36dp">36dp</dimen>
+    <dimen name="dimen_42dp">42dp</dimen>
+    <dimen name="dimen_48dp">48dp</dimen>
+    <dimen name="dimen_56dp">56dp</dimen>
+
+    <!-- extention dimens -->
+    <dimen name="dimen_25dp">25dp</dimen>
+    <dimen name="dimen_320dp">320dp</dimen>
+    <dimen name="dimen_60dp">60dp</dimen>
+    <dimen name="dimen_72dp">72dp</dimen>
+
+    <!-- margin dimens -->
+    <dimen name="activity_horizontal_margin">@dimen/dimen_16dp</dimen>
+    <dimen name="activity_vertical_margin">@dimen/dimen_16dp</dimen>
+
+    <!-- width/height dimens -->
+    <dimen name="status_bar_height">@dimen/dimen_24dp</dimen>
+    <dimen name="navigation_bar_height">@dimen/dimen_48dp</dimen>
+    <dimen name="navigation_bar_width">@dimen/dimen_42dp</dimen>
+    <dimen name="viewer_footer_menu_height">@dimen/dimen_60dp</dimen>
+    <dimen name="navigation_view_width">@dimen/dimen_320dp</dimen>
+
+    <!-- text dimens -->
+    <dimen name="text_size_xxxx_larage">24sp</dimen>
+    <dimen name="text_size_xxx_larage">22sp</dimen>
+    <dimen name="text_size_xx_large">20sp</dimen>
+    <dimen name="text_size_x_large">18sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_15sp">15sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_13sp">13sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_small_11sp">11sp</dimen>
+    <dimen name="text_size_x_small">10sp</dimen>
+    <dimen name="text_size_xx_small">9sp</dimen>
+
+    <!-- TextViewの行間 -->
+    <dimen name="text_line_spacing_6sp">6sp</dimen>
+    <dimen name="text_line_spacing_4sp">4sp</dimen>
+
+</resources>

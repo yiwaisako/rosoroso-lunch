@@ -8,4 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- ToolBar -->
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <!-- ToolBarのオプションメニューのOverflowアイコンの色 -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <!-- ToolBarのタイトルフォントサイズ 標準 bold-->
+    <style name="ToolbarTitleDefault" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

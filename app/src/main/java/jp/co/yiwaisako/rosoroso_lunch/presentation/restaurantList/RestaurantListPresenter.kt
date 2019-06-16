@@ -1,6 +1,7 @@
 package jp.co.yiwaisako.rosoroso_lunch.presentation.restaurantList
 
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.Query
 import jp.co.yiwaisako.rosoroso_lunch.domain.model.Restaurant
 import timber.log.Timber
 
@@ -21,6 +22,7 @@ class RestaurantListPresenter(val view: RestaurantListContract.View) :
     private fun fetchRestaurants(stationKey: String) {
         fireStore.collection("restaurants")
             .whereEqualTo("station", fireStore.document(stationKey))
+            .orderBy("createTime", Query.Direction.DESCENDING)
             .get()
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {

@@ -1,10 +1,10 @@
 package jp.co.yiwaisako.rosoroso_lunch.util.ext
 
 import android.content.Context
-import android.databinding.BindingAdapter
 import android.graphics.drawable.GradientDrawable
 import android.view.View
 import android.widget.FrameLayout
+import androidx.databinding.BindingAdapter
 
 fun View.toVisible() {
     this.visibility = View.VISIBLE

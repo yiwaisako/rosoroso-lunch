@@ -1,6 +1,6 @@
 package jp.co.yiwaisako.rosoroso_lunch
 
-import android.support.multidex.MultiDexApplication
+import androidx.multidex.MultiDexApplication
 import timber.log.Timber
 
 class MainApplication : MultiDexApplication() {

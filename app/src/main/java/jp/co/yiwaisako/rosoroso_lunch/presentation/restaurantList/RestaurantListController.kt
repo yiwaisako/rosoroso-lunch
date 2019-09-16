@@ -3,9 +3,9 @@ package jp.co.yiwaisako.rosoroso_lunch.presentation.restaurantList
 import android.view.View
 import com.airbnb.epoxy.TypedEpoxyController
 import jp.co.yiwaisako.rosoroso_lunch.domain.model.Restaurant
-import jp.co.yiwaisako.rosoroso_lunch.itemEmpty
-import jp.co.yiwaisako.rosoroso_lunch.itemRestaurant
-import jp.co.yiwaisako.rosoroso_lunch.itemSpace
+import jp.co.yiwaisako.rosoroso_lunch.empty
+import jp.co.yiwaisako.rosoroso_lunch.restaurant
+import jp.co.yiwaisako.rosoroso_lunch.space
 import timber.log.Timber
 
 class RestaurantListController(
@@ -15,14 +15,14 @@ class RestaurantListController(
     override fun buildModels(data: List<Restaurant>) {
         when (data.isEmpty()) {
             true -> {
-                itemEmpty {
+                empty {
                     id("itemEmpty")
                 }
             }
             false -> {
                 data.forEach { restaurant ->
                     Timber.d(restaurant.name)
-                    itemRestaurant {
+                    restaurant {
                         id("restaurant $restaurant")
                         restaurantName(restaurant.name)
                         onClick(View.OnClickListener {
@@ -35,7 +35,7 @@ class RestaurantListController(
     }
 
     private fun addSpace(height: Int = 16) {
-        itemSpace {
+        space {
             id(modelCountBuiltSoFar)
             widthDp(0)
             heightDp(height)

@@ -1,9 +1,5 @@
-@EpoxyDataBindingLayouts({
-        R.layout.item_restaurant,
-        R.layout.item_review,
-        R.layout.item_empty,
-        R.layout.item_space,
-})
+@EpoxyDataBindingPattern(rClass = R.class, layoutPrefix = "item")
+
 package jp.co.yiwaisako.rosoroso_lunch;
 
-import com.airbnb.epoxy.EpoxyDataBindingLayouts;
+import com.airbnb.epoxy.EpoxyDataBindingPattern;

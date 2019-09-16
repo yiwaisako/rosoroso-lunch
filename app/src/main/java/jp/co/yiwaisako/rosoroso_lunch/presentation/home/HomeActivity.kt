@@ -1,7 +1,7 @@
 package jp.co.yiwaisako.rosoroso_lunch.presentation.home
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import jp.co.yiwaisako.rosoroso_lunch.R
 import jp.co.yiwaisako.rosoroso_lunch.databinding.ActivityHomeBinding
 import jp.co.yiwaisako.rosoroso_lunch.presentation.restaurantList.RestaurantListActivity

@@ -4,7 +4,7 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import jp.co.yiwaisako.rosoroso_lunch.R
 import jp.co.yiwaisako.rosoroso_lunch.databinding.ActivityRestaurantListBinding
 import jp.co.yiwaisako.rosoroso_lunch.domain.model.Restaurant
@@ -29,7 +29,9 @@ class RestaurantListActivity : AppCompatActivity(), RestaurantListContract.View 
     }
 
     private var stationKey: String = ""
-    private val binding: ActivityRestaurantListBinding by contentViewBinding(R.layout.activity_restaurant_list)
+    private val binding: ActivityRestaurantListBinding by contentViewBinding(
+        R.layout.activity_restaurant_list
+    )
     private lateinit var presenter: RestaurantListContract.Presenter
     private val controller by lazy { RestaurantListController(presenter) }
 
@@ -55,6 +57,7 @@ class RestaurantListActivity : AppCompatActivity(), RestaurantListContract.View 
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
         data ?: return
         if (resultCode != Activity.RESULT_OK) return
         val bundle = data.extras ?: return

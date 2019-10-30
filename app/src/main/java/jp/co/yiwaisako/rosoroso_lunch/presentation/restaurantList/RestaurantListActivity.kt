@@ -60,7 +60,6 @@ class RestaurantListActivity : AppCompatActivity(), RestaurantListContract.View 
         super.onActivityResult(requestCode, resultCode, data)
         data ?: return
         if (resultCode != Activity.RESULT_OK) return
-        val bundle = data.extras ?: return
         when (requestCode) {
             REQUEST_CODE_RESTAURANT_REGISTER -> {
                 presenter.onCreate(stationKey)
